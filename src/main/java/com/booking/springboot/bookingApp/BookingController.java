@@ -1,6 +1,8 @@
 package com.booking.springboot.bookingApp;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Arrays;
@@ -13,12 +15,13 @@ public class BookingController {
     //
     // Booking Information: booking ID, name, and destination.
 //    map url for /bookings
-    @RequestMapping("/bookings")
+    @GetMapping("/bookings")
     public List<Booking> retrieveAllBookings() {
         return Arrays.asList(
                 new Booking(1, "Basic", "Accra Mall"),
                 new Booking(2, "Luxury", "Spintex"),
                 new Booking(3, "Economy", "Ashanti")
+
         );
     }
 }
