@@ -10,7 +10,8 @@ import lombok.Data;
 //currency-service.key=
 @ConfigurationProperties(prefix = "currency-service")
 @Component
-public @Data class CurrencyServiceConfiguration {
+@Data
+public class CurrencyServiceConfiguration {
 
     private String url;
     private String username;
