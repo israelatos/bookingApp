@@ -1,5 +1,8 @@
 package com.booking.springboot.bookingApp;
 
+import lombok.Data;
+
+@Data
 public class Booking {
     private long id;
     private String name;
@@ -11,6 +14,9 @@ public class Booking {
         this.id = id;
         this.name = name;
         this.destination = destination;
+    }
+
+    public Booking(int id, Booking booking) {
     }
 
 //    Getters

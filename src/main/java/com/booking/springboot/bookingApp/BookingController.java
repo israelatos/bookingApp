@@ -18,7 +18,7 @@ public class BookingController {
     @GetMapping("/bookings")
     public List<Booking> retrieveAllBookings() {
         return Arrays.asList(
-                new Booking(1, "Basic", "Accra Mall"),
+                new Booking(11, "Lux", "Lagos"),
                 new Booking(2, "Luxury", "Spintex"),
                 new Booking(3, "Economy", "Ashanti")
 
